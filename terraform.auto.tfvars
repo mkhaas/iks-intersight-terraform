@@ -2,29 +2,29 @@
 # Example .tfvars file
 # Can be copied to terraform.tfvars and edited so that Terraform will automatically use variables from this file.
 #
-name = "tfsandboxTP"
+name = "tfiksiwodemo"
 
 
 # profile params
 # IP Pool name and moid 
-ippool_list = "TempPool"
+ippool_list = "GFFA-HX2-1051"
 
 # Netcfg name
-netcfg_list = "gffa-cluster-1-network-policy"
+netcfg_list = "banzai-by-master-network-policy"
 # Syscfg name
-syscfg_list = "gffa-cluster-1-sys-config-policy"
-infra_list = "SandboxInfra1000"
+syscfg_list = "banzai-by-master-sys-config-policy"
+infra_list = "Galaxy-vcenter-1051"
 #infra_list = "Sandbox_Vcenter_ESXi"
-ippoolmaster_list = "TempPool"
-ippoolworker_list = "TempPool"
-kubever_list = "Kubernetes-1.18"
+ippoolmaster_list = "GFFA-HX2-1051"
+ippoolworker_list = "GFFA-HX2-1051"
+kubever_list = "K8sVersionPolicy1.19.5-iks-0"
 orgobjtype = "organization.Organization"
 mgmtcfgetcd = false
 mgmtcfglbcnt = 1
 mgmtcfgsshuser = "iksadmin"
-mastergrpname = "tfsb-master-temppool"
+mastergrpname = "tfiksiwo-master-pool"
 masterdesiredsize = 1
-workergrpname = "tfsb-worker-temppool"
+workergrpname = "tfiksiwo-worker-pool"
 workerdesiredsize = 2
 
 
